@@ -13,9 +13,9 @@ import (
 )
 
 type options struct {
-	File      string `long:"file" required:"true"`
-	Tickets   uint   `long:"numbilets" required:"true"`
-	Parameter int    `long:"parameter" required:"true"`
+	File      string `long:"file" description:"Path to file containing names" required:"true"`
+	Tickets   uint   `long:"numbilets" description:"Total number of available tickets" required:"true"`
+	Parameter int    `long:"parameter" description:"Ticket number generation parameter" required:"true"`
 }
 
 type ticketNumberGenerator struct {
